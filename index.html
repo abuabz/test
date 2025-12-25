@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Anniversary Gift</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #000;
+  background-image: url("https://img.freepik.com/premium-photo/car-journey-rural-road-picturesque-sunlight-vertical-mobile-wallpaper_896558-75085.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: bgZoom 18s infinite alternate;
+  color: #fff;
+}
+
+@keyframes bgZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+  z-index: -1;
+}
+
+/* First section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 90%;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  animation: fadeUp 1.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gift {
+  font-size: 52px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+h1 {
+  font-size: 32px;
+  margin: 14px 0;
+}
+
+.place {
+  font-size: 34px;
+  font-weight: 800;
+  color: #7CFFB2;
+  text-shadow: 0 0 15px rgba(124,255,178,0.6);
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* SECOND SECTION */
+.anniversary {
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeUp 1.8s ease forwards;
+}
+
+.anniversary-card {
+  max-width: 92%;
+  margin: auto;
+  background: rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 34px 26px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.anniversary h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: #FFD1DC;
+}
+
+.names {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.anniversary p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #f2f2f2;
+}
+
+/* Mobile only */
+@media (min-width: 768px) {
+  body { display: none; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<!-- FIRST SECTION -->
+<section class="hero">
+  <div class="card">
+    <div class="gift">🎁</div>
+    <h1>I am giving you a gift</h1>
+    <div class="place">OOTY 🌄</div>
+    <p>
+      We are going to Ooty.<br>
+      You can choose the date.
+    </p>
+  </div>
+</section>
+
+<!-- SECOND SECTION -->
+<section class="anniversary">
+  <div class="anniversary-card">
+    <h2>Happy 1st Anniversary 💖</h2>
+
+    <div class="names">
+      Abu & Faru
+    </div>
+
+    <p>
+      Today is a very special day.<br>
+      It is our first anniversary together.
+    </p>
+
+    <p>
+      One year of love, understanding,<br>
+      support, and beautiful memories.
+    </p>
+
+    <p>
+      From the first day until today,<br>
+      we have grown together and learned together.
+    </p>
+
+    <p>
+      This journey is just the beginning.<br>
+      Many more smiles, dreams, and moments<br>
+      are waiting for us.
+    </p>
+
+    <p>
+      This Ooty trip is a small gift,<br>
+      but my love and care for you<br>
+      will always be much bigger.
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
